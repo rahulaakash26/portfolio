@@ -1,0 +1,48 @@
+.sidenav-container {
+
+
+}
+.main {
+  position: relative;
+  margin: 0 auto;
+}
+.sidenav-content {
+  height:613px ;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  background-image:url(../../assets/home.jpg) ;
+  width: 100%;
+  background-size: cover;
+}
+
+.sidebuttons{
+  background: #ff3c5e;
+}
+.sidebuttons:hover{
+  background: darkcyan;
+}
+.the-sidenav {
+  padding: 20px;
+  background: floralwhite;
+  color: dimgrey;
+
+}
+.the-sidenav2{
+
+  background: #5942f4;
+  opacity: .8;
+}
+.profile{
+  margin-left: 55%;
+
+  height: 40px;
+}
+
+.right{
+  margin:auto;
+}
+.sidebutton:hover{
+  background: darkcyan;
+
+}
