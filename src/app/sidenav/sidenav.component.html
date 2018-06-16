@@ -1,6 +1,6 @@
 <mat-drawer-container class="sidenav-container" fxLayout="column" fxLayout.xs="row">
 
-  <mat-drawer #drawer class="the-sidenav" [mode]="isLargeScreen() ? 'side' : 'over'" [opened]="isLargeScreen()">
+  <mat-drawer #drawer class="the-sidenav" [mode]="isLargeScreen() ? 'side' : 'over'">
     <app-sidenavitems (click)="isLargeScreen()?'':drawer.toggle()"></app-sidenavitems>
   </mat-drawer>
 

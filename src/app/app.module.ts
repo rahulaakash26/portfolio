@@ -6,6 +6,8 @@ import {SidenavComponent} from './sidenav/sidenav.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {Routes, RouterModule} from '@angular/router';
+import {TypingAnimationDirective, TypingAnimationModule} from 'angular-typing-animation';
+
 import {
   MatSidenavModule,
   MatMenuModule,
@@ -16,7 +18,7 @@ import {
   MatDividerModule,
   MatListModule,
   MatTabsModule,
-  MatTreeModule
+  MatTreeModule,
 } from '@angular/material';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
@@ -90,6 +92,7 @@ const routes: Routes = [
     BrowserModule,
     HttpModule,
     FormsModule,
+    TypingAnimationModule,
     BrowserAnimationsModule,
     MatSidenavModule,
     MatTabsModule,

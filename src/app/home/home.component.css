@@ -1,0 +1,29 @@
+.site-title {
+  font-size: 8em;
+  font-family: 'Yu Gothic Light';
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  position: static;
+  width: auto;
+  text-align: center;
+  padding-top: .8em;
+}
+
+.typing-animation {
+  font-family: "Yu Gothic UI Semilight";
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .site-title {
+    font-size: 3em;
+  }
+  .typing-animation{
+    font-size: 1em;
+  }
+}
