@@ -4,8 +4,7 @@
     <button class="sidebuttons" mat-raised-button color="primary" mat-button (click)="drawer.toggle()">
       <mat-icon>cancel_presentation</mat-icon>
     </button>
-    <!--<app-sidenavitems (click)="isLargeScreen()?'':drawer.toggle()"></app-sidenavitems>-->
-    <app-sidenavitems></app-sidenavitems>
+    <app-sidenavitems (click)="isLargeScreen()?'':drawer.toggle()"></app-sidenavitems>
   </mat-drawer>
 
   <mat-drawer #drawer2 class="the-sidenav2" [mode]="isLargeScreen() ? 'side' : 'over'" [opened]="isLargeScreen()"
@@ -19,12 +18,12 @@
 
   <div class="sidenav-content" fxLayout="row" fxLayout.xs="row">
 
-    <!--<div class="main" fxFlex="95%" fxFlex.xs="95%" [@animRoutes]="getPage(appOutlet)">
+    <div class="main" fxFlex="95%" fxFlex.xs="95%" [@animRoutes]="getPage(appOutlet)">
       <button class="sidebutton" mat-raised-button color="primary" mat-button (click)="drawer.toggle()">
         <mat-icon>reorder</mat-icon>
       </button>
       <router-outlet #appOutlet="outlet"></router-outlet>
-    </div>-->
+    </div>
 
     <div class="right" fxFlex="5%" fxflex.xs="5%" fxLayoutAlign="end">
       <button class="profile sidebutton" mat-raised-button color="primary" mat-button (click)="drawer2.toggle()">

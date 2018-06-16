@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-sidenavitems',
@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavitemsComponent implements OnInit {
 
-  constructor() { }
+  menu = [
+    {'name': 'Home', 'compattached': 'home', 'icon': 'home'},
+    {'name': 'About', 'compattached': 'about', 'icon': 'person'},
+    {'name': 'Education', 'compattached': 'education', 'icon': 'school'},
+    {'name': 'Skills', 'compattached': 'skills', 'icon': 'build'},
+    {'name': 'Projects', 'compattached': 'projects', 'icon': 'books'},
+    {'name': 'Workshops', 'compattached': 'workshops', 'icon': 'work'},
+    {'name': 'Achievements', 'compattached': 'achievements', 'icon': 'sentiment_satisfied_alt'},
+    {'name': 'Internships', 'compattached': 'internship', 'icon': 'laptop'},
+    {'name': 'Contact', 'compattached': 'contact', 'icon': 'mail_outline'}
+  ];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
